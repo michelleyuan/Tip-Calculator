@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E15E08D1C2BBBD10060502E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E15E08C1C2BBBD10060502E /* SettingsViewController.swift */; };
 		2EF00A421C14D83A00DD238A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF00A411C14D83A00DD238A /* AppDelegate.swift */; };
 		2EF00A441C14D83A00DD238A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF00A431C14D83A00DD238A /* ViewController.swift */; };
 		2EF00A471C14D83A00DD238A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF00A451C14D83A00DD238A /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E15E08C1C2BBBD10060502E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		2EF00A3E1C14D83A00DD238A /* Tip Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EF00A411C14D83A00DD238A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EF00A431C14D83A00DD238A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				2EF00A411C14D83A00DD238A /* AppDelegate.swift */,
 				2EF00A431C14D83A00DD238A /* ViewController.swift */,
 				2EF00A451C14D83A00DD238A /* Main.storyboard */,
+				2E15E08C1C2BBBD10060502E /* SettingsViewController.swift */,
 				2EF00A481C14D83A00DD238A /* Assets.xcassets */,
 				2EF00A4A1C14D83A00DD238A /* LaunchScreen.storyboard */,
 				2EF00A4D1C14D83A00DD238A /* Info.plist */,
@@ -192,6 +195,7 @@
 				TargetAttributes = {
 					2EF00A3D1C14D83A00DD238A = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = RLKL7N6BAE;
 					};
 					2EF00A511C14D83A00DD238A = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -257,6 +261,7 @@
 			files = (
 				2EF00A441C14D83A00DD238A /* ViewController.swift in Sources */,
 				2EF00A421C14D83A00DD238A /* AppDelegate.swift in Sources */,
+				2E15E08D1C2BBBD10060502E /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,10 +401,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Tip Calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "justme.Tip-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -407,10 +416,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Tip Calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "justme.Tip-Calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -481,6 +494,7 @@
 				2EF00A681C14D83A00DD238A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EF00A691C14D83A00DD238A /* Build configuration list for PBXNativeTarget "Tip CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +503,7 @@
 				2EF00A6B1C14D83A00DD238A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EF00A6C1C14D83A00DD238A /* Build configuration list for PBXNativeTarget "Tip CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +512,7 @@
 				2EF00A6E1C14D83A00DD238A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
